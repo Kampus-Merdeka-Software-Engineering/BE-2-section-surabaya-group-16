@@ -19,6 +19,15 @@ module.exports = (sequelize, DataTypes) => {
           allowNull: false,
         },
       });
+      this.Book = Room.hasMany(models.Book, {
+        onDelete: "CASCADE",
+        onUpdate: "CASCADE",
+        foreignKey: {
+          name: "room_id",
+          type: DataTypes.INTEGER,
+          allowNull: false,
+        },
+      });
     }
   }
   Room.init({
