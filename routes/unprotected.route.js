@@ -11,7 +11,7 @@ const { getFeedback } = require("../controllers/feedback");
 
 router.get("/room", getRoom);
 router.get("/facilities", getFacilities);
-router.get("/detail", getDetailFacilities);
+router.get("/detail/:room_id", getDetailFacilities);
 router.get("/booking/:room_id", getRoomBook);
 router.post("/book", createBooking);
 router.post("/feedbacks", createFeedback);
