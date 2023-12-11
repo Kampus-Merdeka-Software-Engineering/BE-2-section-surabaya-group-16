@@ -4,7 +4,7 @@ const unprotectedRoute = require("./routes/unprotected.route");
 
 const app = express();
 
-app.use(cors({origin: "http://127.0.0.1:5500", credentials:true}))
+app.use(cors({origin: "https://kampus-merdeka-software-engineering.github.io/FE-2-surabaya-16/", credentials:true}))
 
 app.use(express.json());
 
