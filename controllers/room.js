@@ -10,7 +10,6 @@ async function getRoom(req, res){
     return res.status(response.code).json(response);
 };
 
-
 module.exports = {
     getRoom
 }

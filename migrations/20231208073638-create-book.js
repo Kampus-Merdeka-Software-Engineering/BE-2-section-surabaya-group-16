@@ -25,7 +25,10 @@ module.exports = {
         type: Sequelize.STRING
       },
       total_room: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
+      },
+      total_price: {
+        type: Sequelize.INTEGER
       },
       room_id: {
         type: Sequelize.INTEGER
