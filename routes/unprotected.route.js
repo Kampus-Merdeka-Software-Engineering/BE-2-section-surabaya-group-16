@@ -15,6 +15,6 @@ router.get("/detail/:room_id", getDetailFacilities);
 router.get("/booking/:room_id", getRoomBook);
 router.post("/book", createBooking);
 router.post("/feedbacks", createFeedback);
-router.get("/feedbacks/:feedback_id", getFeedback);
+router.get("/feedbacks", getFeedback);
 
 module.exports = router;
