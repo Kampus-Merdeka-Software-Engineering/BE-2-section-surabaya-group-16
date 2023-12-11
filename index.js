@@ -4,21 +4,9 @@ const unprotectedRoute = require("./routes/unprotected.route");
 
 const app = express();
 
-app.use(
-  cors({
-    origin:
-      "https://kampus-merdeka-software-engineering.github.io/FE-2-surabaya-16/",
-    credentials: true,
-  })
-);
 app.use(express.json());
 
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
   res.setHeader("Content-Type", "application/json");
   next();
 });
