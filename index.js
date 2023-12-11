@@ -8,11 +8,10 @@ app.use(express.json());
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "POST", "GET", "PUT");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  res.setHeader("Access-Control-Allow-Methods", "POST", "GET", "PUT", "OPTIONS", "DELETE");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type", "Aplication/JSON");
   next();
 })
-
 
 app.get("/test", (req, res) => {
   res.send("Test route");
