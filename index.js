@@ -3,7 +3,7 @@ const cors = require('cors')
 const unprotectedRoute = require("./routes/unprotected.route");
 
 const app = express();
-
+app.options('*', cors());
 app.use(cors({origin: "https://kampus-merdeka-software-engineering.github.io/FE-2-surabaya-16/", credentials:true}))
 
 app.use(express.json());
