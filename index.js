@@ -1,5 +1,4 @@
 const express = require("express");
-const cors = require("cors");
 const unprotectedRoute = require("./routes/unprotected.route");
 
 const app = express();
