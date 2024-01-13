@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-app.use('/external-server', createProxyMiddleware({ target: 'https://successful-clothes-ox.cyclic.app', changeOrigin: true }));
+app.use('/external-server', createProxyMiddleware({ target: 'https://sunshine-i-land-resort.netlify.app', changeOrigin: true }));
 
 app.get("/test", (req, res) => {
   res.send("Test route");
